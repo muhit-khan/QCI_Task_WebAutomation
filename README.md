@@ -1,38 +1,47 @@
-# QCI_Task_WebAutomation
+# eBay QA Automation
 
-This project is a web automation task for QCI (Quality Code Inspection). It aims to automate the testing of a web application using Python and pytest.
+This repository contains automated tests for eBay's website using Selenium, pytest, and Allure for reporting.
 
-## Functionality
+## Project Description
 
-The QCI_Task_WebAutomation project provides automated tests for the eBay website. It covers various scenarios to ensure the functionality of the website is working as expected. The tests include searching for products, adding items to the cart, and checking out.
+The eBay QA Automation project aims to automate the testing process for eBay's website. It utilizes Selenium, pytest, and Allure to create robust and reliable automated tests.
 
-## How to Run
+## Setup
 
 To run the tests, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies by running the following command in the project directory:
+
+   ```bash
+   git clone https://github.com/muhit-khan/eBay_QA_Automation.git
    ```
+
+2. Install dependencies:
+
+   ```bash
    pip install -r requirements.txt
    ```
-3. Execute the following command to run the tests:
-   ```
-   pytest -v -s tests/test_ebay.py --alluredir=allure-results
+
+3. Run tests:
+
+   ```bash
+   pytest
    ```
 
-## Viewing Reports
+## Allure Report
 
-After running the tests, you can view the reports using Allure. Follow these steps:
+After running the tests, you can generate and view the Allure report. The Allure report provides detailed information about the test execution and results.
 
-1. Install Allure command-line tool by referring to the official documentation.
-2. Navigate to the project directory.
-3. Execute the following command to serve the Allure report:
+To generate and open the Allure report, follow these steps:
+
+1. Generate the Allure report locally:
+
+   ```bash
+   allure serve ./reports/allure
    ```
-   allure serve allure-results
-   ```
+
+2. Or, Open the Live Allure report in your browser:
+
+   The Allure report is hosted on the following link: [Live Allure Report](https://6648ab3811b525d9576c1028--inspiring-parfait-767564.netlify.app/)
 
 This will open a web browser with the generated report, allowing you to view the test results, including detailed information about test cases, steps, and any failures encountered.
-
-Please note that you may need to customize the commands based on your specific environment and setup.
-
-For any further assistance, feel free to ask.
