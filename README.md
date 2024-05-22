@@ -1,4 +1,4 @@
-# eBay QA Automation
+# eBay QA Automation with Selenium and Pytest
 
 This repository contains automated tests for eBay's website using Selenium, pytest, and Allure for reporting.
 
